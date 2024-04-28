@@ -197,3 +197,46 @@ p{
     font-weight: 400;
     font-family: "Quicksand", sans-serif;
 }
+
+/* Estilos para el modal */
+.modal {
+    display: none; /* El modal se oculta por defecto */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border: 1px solid black;
+    z-index: 1000;
+}
+
+.modal-contenido {
+    background-color: #fff; /* Fondo blanco */
+    width: 80%; /* Ancho del modal */
+    max-width: 600px; /* Ancho máximo del modal */
+    margin: 50px auto; /* Centra el modal verticalmente */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Sombra */
+    position: relative;
+}
+
+/* Estilos para los botones dentro del modal */
+.aplicar-modal,
+.cerrar-modal {
+    margin-top: 10px;
+    padding: 8px 16px;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.aplicar-modal {
+    background-color: #007bff; /* Azul */
+}
+
+.cerrar-modal {
+    background-color: #dc3545; /* Rojo */
+}

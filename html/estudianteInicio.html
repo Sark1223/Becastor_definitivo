@@ -4,24 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>INICIO BECASTOR</title>
-    <link href="../css/estudianteInicio.css" rel="stylesheet" type="text/css"></link>
-    <link rel="stylesheet" href="../css/barra_navegacion.css"></link>
-    <link rel="icon" href="../img/favicon.ico" type="image/x-icon">
+    <!-- Estilos -->
+    <link href="../css/estudianteInicio.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="../css/barra_navegacion.css">
+    <!-- Iconos -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Favicon -->
+    <link rel="icon" href="../img/favicon.ico" type="image/x-icon">
 </head>
 <body>
+    <!-- Cabecera -->
     <header class="header">
         <!-- Logo -->
         <div class="logo">
             <a href="../index.html"><img src="../img/logobecastorheader.png" alt="Logo de la marca"></a>
         </div>
-        <!-- icono menú -->
+        <!-- Icono menú -->
         <nav>
             <ul class="nav-links">
                 <button class='bx bx-menu' style='color:#fcfafa'></button>
             </ul>
         </nav>
-        <!-- icono usuario -->
+        <!-- Icono usuario -->
         <a href="#" class="btn"><i class='bx bxs-user'></i></a>
         <div id="usuario"></div>
         <!-- Menú desplegable -->
@@ -35,80 +39,139 @@
         </div>
     </header>
     
-    
-    <div class = "container">
+    <!-- Contenido principal -->
+    <div class="container">
+        <!-- Barra de búsqueda -->
         <div id="div_busqueda">
             <div class="barra">
-                <i class='bx bx-search-alt bx-rotate-90' ></i>
+                <i class='bx bx-search-alt bx-rotate-90'></i>
             </div>
         </div>
+        <!-- Contenedor de opciones -->
         <div id="contenedor_opciones">
-            <div class="card">
+            <!-- Tarjeta 1 -->
+            <div class="card" id="beca1">
                 <img src="../img/BBVA.jpg" alt="imagen"> 
-                <h3>Beca BBVA</h3>
-                <div class="etiquetas">
-                    <P>Secundaria</P> 
-                    <p>prepa</p>
-                    <P>Secundaria</P> 
-                    <p>prepa</p>
-                    <P>Secundaria</P> 
-                    <p>prepa</p>
+                <h3>BBVA Beca Alimenticia</h3>
+            </div>
+            <!-- Modal para Beca BBVA -->
+            <div id="modalBeca1" class="modal">
+                <div class="modal-contenido">
+                    <h3>BBVA Beca Alimenticia</h3>
+                    <br>
+                    <p class="descripcion_modal">Esta beca ofrece apoyo económico para cubrir gastos de alimentación durante el periodo escolar.</p>
+                    <br><br>
+                    <p class="requisitos_modal">Requisitos: Tener un promedio mínimo de 8.0, demostrar necesidad económica y estar inscrito en una institución educativa reconocida.</p>
+                    <br>
+                    <button class="aplicar-modal">Aplicar</button>
+                    <button class="cerrar-modal">Cancelar</button>
                 </div>
-                <p class="descripcion_beca">Beca para <strong>Cavos que inspiran</strong> </p>
             </div>
-            <div class="card">
+
+            <!-- Tarjeta 2 -->
+            <div class="card" id="beca2">
                 <img src="../img/BenitoJuarez.jpg" alt="imagen"> 
-                <h3>Beca Benito Juarez</h3>
-                <div class="etiquetas">
-                    <P>Secundaria</P>
-                </div> 
+                <h3>Benito Juarez Beca de Excelencia</h3>
             </div>
-            <div class="card">
+            <!-- Modal para Beca Benito Juarez -->
+            <div id="modalBeca2" class="modal">
+                <div class="modal-contenido">
+                    <h3>Benito Juarez Beca de Excelencia</h3>
+                    <br>
+                    <p class="descripcion_modal">Esta beca reconoce el rendimiento académico sobresaliente de los estudiantes y proporciona apoyo financiero para continuar sus estudios.</p>
+                    <br><br>
+                    <p class="requisitos_modal">Requisitos: Mantener un promedio mínimo de 9.0, ser estudiante regular y participar en actividades extracurriculares.</p>
+                    <br>
+                    <button class="aplicar-modal">Aplicar</button>
+                    <button class="cerrar-modal">Cancelar</button>
+                </div>
+            </div>
+
+            <!-- Tarjeta 3 -->
+            <div class="card" id="beca3">
                 <img src="../img/Santander.jpg" alt="imagen"> 
-                <h3>Beca Santander</h3>
-                <div class="etiquetas">
-                    <P>Secundaria</P>
-                </div> 
+                <h3>Santander Beca o Apoyo para titulacion</h3>
             </div>
-            <div class="card">
-                <img src="../img/Santander.jpg" alt="imagen"> 
-                <h3>Beca Santander</h3>
-                <div class="etiquetas">
-                    <P>Secundaria</P>
-                </div>  
-                
+            <!-- Modal para Beca Santander -->
+            <div id="modalBeca3" class="modal">
+                <div class="modal-contenido">
+                    <h3>Santander Beca o Apoyo para titulacion</h3>
+                    <br>
+                    <p class="descripcion_modal">Esta beca está diseñada para ayudar a los estudiantes a cubrir los gastos relacionados con la titulación universitaria.</p>
+                    <br><br>
+                    <p class="requisitos_modal">Requisitos: Estar en proceso de titulación, presentar un plan de estudios aprobado y contar con recomendaciones académicas.</p>
+                    <br>
+                    <button class="aplicar-modal">Aplicar</button>
+                    <button class="cerrar-modal">Cancelar</button>
+                </div>
             </div>
-            <div class="card">
+
+            <!-- Tarjeta 4 -->
+            <div class="card" id="beca4">
+                <img src="../img/BBVA.jpg" alt="imagen"> 
+                <h3>BBVA Beca para la Continuación de Estudios</h3>
+            </div>
+            <!-- Modal para Beca Cuatro -->
+            <div id="modalBeca4" class="modal">
+                <div class="modal-contenido">
+                    <h3>BBVA Beca para la Continuación de Estudios</h3>
+                    <br>
+                    <p class="descripcion_modal">Esta beca brinda apoyo financiero a estudiantes que deseen continuar con estudios de nivel medio o superior.</p>
+                    <br><br>
+                    <p class="requisitos_modal">Requisitos: Ser estudiante activo, presentar un plan de estudios y tener un buen historial académico.</p>
+                    <br>
+                    <button class="aplicar-modal">Aplicar</button>
+                    <button class="cerrar-modal">Cancelar</button>
+                </div>
+            </div>
+
+            <!-- Tarjeta 5 -->
+            <div class="card" id="beca5">
                 <img src="../img/BenitoJuarez.jpg" alt="imagen"> 
-                <h3>Beca Benito Juarez</h3>
-                <div class="etiquetas">
-                    <P>Secundaria</P>
-                </div>  
+                <h3>Benito Juarez Beca para Estudios de Especialidad</h3>
             </div>
-            <div class="card">
-                <img src="../img/BBVA.jpg" alt="imagen"> 
-                <h3>BBVA</h3>
-                <div class="etiquetas">
-                    <P>Secundaria</P>
-                </div>  
+            <!-- Modal para Beca Cinco -->
+            <div id="modalBeca5" class="modal">
+                <div class="modal-contenido">
+                    <h3>Benito Juarez Beca para Estudios de Especialidad</h3>
+                    <br>
+                    <p class="descripcion_modal">Esta beca proporciona apoyo económico a estudiantes que deseen realizar estudios de especialización en su área de interés.</p>
+                    <br><br>
+                    <p class="requisitos_modal">Requisitos: Contar con título universitario, tener experiencia laboral relacionada y presentar un proyecto de estudios.</p>
+                    <br>
+                    <button class="aplicar-modal">Aplicar</button>
+                    <button class="cerrar-modal">Cancelar</button>
+                </div>
             </div>
-            <div class="card">
-                <img src="../img/BBVA.jpg" alt="imagen"> 
-                <h3>BBVA</h3>
-                <div class="etiquetas">
-                    <P>Secundaria</P>
-                </div>  
+
+            <!-- Tarjeta 6 -->
+            <div class="card" id="beca6">
+                <img src="../img/Santander.jpg" alt="imagen"> 
+                <h3>Santander Beca de Capacitación</h3>
             </div>
-            <div class="card">
-                <img src="../img/BBVA.jpg" alt="imagen"> 
-                <h3>BBVA</h3>
-                <div class="etiquetas">
-                    <P>Secundaria</P>
-                </div> 
+            <!-- Modal para Beca Seis -->
+            <div id="modalBeca6" class="modal">
+                <div class="modal-contenido">
+                    <h3>Santander Beca de Capacitación</h3>
+                    <br>
+                    <p class="descripcion_modal">Esta beca busca fomentar la capacitación y actualización de conocimientos en diversas áreas de estudio.</p>
+                    <br><br>
+                    <p class="requisitos_modal">Requisitos: Ser estudiante activo, demostrar interés en el área de capacitación y tener disponibilidad de tiempo.</p>
+                    <br>
+                    <button class="aplicar-modal">Aplicar</button>
+                    <button class="cerrar-modal">Cancelar</button>
+                </div>
             </div>
         </div>
     </div>
 
+    <!-- Scripts -->
     <script src="../scripts/menu_hamburguesa.js"></script>
+    <script src="../scripts/modal.js"></script>
 </body>
 </html>
+
+
+
+
+
