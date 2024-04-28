@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="../css/login.css"></link>
+    <link rel="stylesheet" href="../css/barra_navegacion.css"></link>
+    <link rel="icon" href="../img/favicon.ico" type="image/x-icon">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="../index.html"><img src="../img/logobecastorheader.png" alt="Logo de la marca"></a>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="conocenos.html">Conocenos</a></li>
+                <li><a href="login.html">Log In</a></li>
+                <li><a href="registro.html">Registro</a></li>
+            </ul>
+        </nav>
+        <a href="#" class="btn"><button>Contact</button></a>
+    </header>
+    
+    <div class="wrapper">
+        <form action="../php/iniciarSes.php" method="POST">
+            <h1>Iniciar Sesión</h1>
+            <!-- Div para mostrar mensaje de error  -->
+            <div id="div_error"></div> 
+
+            <div class="input-box">
+                <input type="text" name="correo" placeholder="Usuario" required>
+                <i class='bx bxs-user'></i>
+            </div>
+
+            <div class="input-box">
+                <input type="password" name="contrasena" placeholder="Constraseña" required>
+                <i class='bx bxs-lock-alt' ></i>
+            </div>
+
+            <div class="remember-forgot">
+                <label><input type="checkbox"> Recordar contraseña</label>
+                <a href="#">¿Olvidaste tu contraseña?</a>
+            </div>
+
+            <button type="submit" value="Login" class="btn">Iniciar Sesión</button>
+
+            <div class="register-link">
+                <p>¿No tienes una cuenta?, <a href="#">¡Registrate aquí!</p>
+            </div>
+        </form>
+        
+    </div>
+    <script>
+        // Leer la URL para mostrar el mensaje de error
+        const urlParams = new URLSearchParams(window.location.search);
+        const error = urlParams.get('error');
+        if (error === '1') {
+            const div_error = document.getElementById('div_error'); //Creacion del objeto Div_error
+                const mostrar_erro = document.createElement('div');//creacion de un nuevo div
+                mostrar_erro.textContent = "Usuario o contraseña incorrectos"; //asignacion de Texto al Div
+
+            // Personalizacion del div
+            div_error.style.backgroundColor = '#e60f0f79';
+            
+            div_error.style.
+
+            div_error.style.display = "flex";
+            div_error.style.height = "40px";
+            div_error.style.alignItems = "center";
+            div_error.style.justifyContent = "center";
+            /*margen*/
+            div_error.style.marginTop = "-15px";
+            div_error.style.marginBottom = "10px";
+            /*borde*/
+            div_error.style.border = "solid";
+            div_error.style.borderColor ="#d40101";
+            div_error.style.borderRadius = '10px';
+                /*Personalizar mensaje*/
+                mostrar_erro.style.fontFamily = "'Overpass', sans-serif";
+                mostrar_erro.style.fontSize = "20px"
+                mostrar_erro.style.textAlign = "center"
+                mostrar_erro.style.color  ="white"
+            div_error.appendChild(mostrar_erro); //Agregar nuevo div con mensaje al div_error
+        }
+    </script>
+</body>
+</html>
