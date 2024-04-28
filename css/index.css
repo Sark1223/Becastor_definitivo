@@ -1,0 +1,28 @@
+body{
+    overflow-y: auto;
+    overflow-x: hidden;
+    min-height: 100%;
+    display: block;
+    background-image: URL("../img/fondo1.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#slogan {
+    position: relative;
+    left: 50%;
+    z-index: 1px;
+    font-family: "Nunito", sans-serif;
+    font-style: normal;
+    font-size: 2rem;
+    color: white;
+    max-width: 50%;
+    text-shadow:
+        1px 1px 2px black,
+        0 0 1em rgba(0,0,0,0.18),
+        0 0 0.2em rgba(0,0,0,0.18);
+    text-align: center;
+    margin-top: 100px; /* Cambia el valor según la cantidad de espacio que desees agregar arriba */
+}
