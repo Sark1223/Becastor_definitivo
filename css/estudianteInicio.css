@@ -240,3 +240,20 @@ p{
 .cerrar-modal {
     background-color: #dc3545; /* Rojo */
 }
+.etiquetas {
+    padding: 0px 5px; /* Espacio interno en los lados */
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start; /* Alinear las etiquetas al principio */
+}
+
+.etiquetas p {
+    border-radius: 10px;
+    background-color: #ffbb0e6a; /* Amarillo */
+    color: white; /* Letra blanca */
+    font-size: 1.1vw;
+    margin: 3px 3px; /* Eliminar margen entre las etiquetas */
+    padding: 5px 10px; /* Espaciado interno */
+}
+
