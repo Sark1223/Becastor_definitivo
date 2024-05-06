@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    width: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    min-height: 100%;
+    display: block;
+    background-image: url("../img/fondo3.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+     overflow-y:hidden;
+    /*overflow-x: none; */
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.Seccion{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    padding:20px 0px 20px 0px;
+    background-color: rgba(95, 158, 160, 0.408);
+}
+
+form{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
+    border-radius: 20px;
+}
+
+form i{
+    font-size: 30px;
+    color: whitesmoke;
+}
+
+form input{
+    padding: 2px 8px 2px 8px;
+    border-radius: 8px;
+    border: none;
+    background-color: whitesmoke;
+    margin-bottom: 13px;
+}

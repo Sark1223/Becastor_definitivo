@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    width: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    min-height: 100%;
+    display: block;
+    background-image: url("../img/fondo3.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+     overflow-y:hidden;
+    /*overflow-x: none; */
+}

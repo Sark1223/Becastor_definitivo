@@ -22,70 +22,6 @@ body::-webkit-scrollbar {
     display: none; /* Ocultar scroll */
 } 
 
-.bx-menu{
-    font-size: 50px;
-    background-color: transparent;
-    border: none;
-}
-.bx-menu:hover{
-    transform: scale(1.1);
-}
-
-.bx-menu:active{
-    transform: scale(0.9);
-}
-
-.bxs-user{
-    margin-right: 10px;
-    font-weight: 700;
-    color: #1b3039;
-    padding: 15px;
-    background: #eceff1;
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all 0.3s ease 0s;
-    font-size: 30px;
-}
-
-.bxs-user:hover{
-    background-color: #e2f1f8 ;
-    color: #ffbc0e;
-    transform: scale(1.1);
-    /* font-size: 33px; */
-}
-
-.menu-desplegable {
-    position: absolute;
-    top: 29px; /* Ajusta esta altura según la altura de tu barra de navegación */
-    right: 115px;
-    width: 200px;
-    border-radius: 7px;
-    background-color: #fff;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-    display: none;
-    z-index: 10; /* Asegúrate de que el menú desplegable esté por encima del resto de los elementos */
-}
-
-.menu-desplegable ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.menu-desplegable ul li {
-    padding: 10px;
-}
-
-.menu-desplegable ul li a {
-    text-decoration: none;
-    color: #333;
-}
-
-.menu-desplegable ul li a:hover {
-    background-color: #f0f0f0;
-}
-
 .container{
     width: 100%;
     padding-top: 20px;
@@ -100,6 +36,11 @@ body::-webkit-scrollbar {
     align-items: center;
     justify-content: center;
     padding-bottom: 20px;
+    transition: all 0.3s;
+}
+
+#div_busqueda:hover{
+    transform: scale(1.05);
 }
 
 .barra{
@@ -108,15 +49,39 @@ body::-webkit-scrollbar {
     background-color: rgba(240, 248, 255, 0.459);
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
     border-radius: 20px;
-
     display: flex;
-    justify-content: end;
+    justify-content:space-between;
 }
 
 .barra i{
+    /* background-color: transparent;
+    border: none; */
     font-size: 35px;
     padding-top: 7px;
     padding-left: 3px;
+}
+
+.barra i:active{
+    font-size: 32px;
+    
+}
+
+#buscar{
+    width: 90%;
+    background-color: transparent;
+    /* background-color: rgba(95, 158, 160, 0); */
+    margin-left: 15px;
+    border: none;
+    outline: none;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0px 1000px #fff inset;
+}
+
+input:autofill{
+    background-color: transparent;
 }
 
 #contenedor_opciones{
@@ -149,6 +114,10 @@ body::-webkit-scrollbar {
 }
 
 .card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     width: 29%;
     border-radius: 20px;
     backdrop-filter: blur(5px);
@@ -157,6 +126,11 @@ body::-webkit-scrollbar {
     color: whitesmoke;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.324);
     background-color: rgba(255, 255, 255, 0.208);
+    transition: all 0.3s;
+}
+
+.card:hover{
+    transform: scale(1.02);
 }
 
 .card img{
@@ -166,12 +140,13 @@ body::-webkit-scrollbar {
 }
 
 .card h3{
+    min-height: 50px;
     font-size:2.3vw;
     width: 100%;
     text-align: center;
 }
 
-.etiquetas{
+/* .etiquetas{
     padding: 0px 2px 0px 2px;
     display: flex;
     flex-wrap: wrap;
@@ -189,7 +164,7 @@ p{
     background-color: #ffbb0e6a;
     font-size: 1.1vw;
     margin: 3px;
-}
+} */
 
 .descripcion_beca, .descripcion_beca strong{
     margin-top: 5px;
@@ -249,11 +224,16 @@ p{
 }
 
 .etiquetas p {
-    border-radius: 10px;
+    border-radius: 15px;
     background-color: #ffbb0e6a; /* Amarillo */
     color: white; /* Letra blanca */
     font-size: 1.1vw;
     margin: 3px 3px; /* Eliminar margen entre las etiquetas */
     padding: 5px 10px; /* Espaciado interno */
+}
+
+.etiquetas p:focus{
+    transform: scale(1.9);
+
 }
 

@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+.bx-menu{
+    font-size: 50px;
+    background-color: transparent;
+    border: none;
+}
+.bx-menu:hover{
+    transform: scale(1.1);
+}
+
+.bx-menu:active{
+    transform: scale(0.9);
+}
+
+.bxs-user{
+    margin-right: 10px;
+    font-weight: 700;
+    color: #1b3039;
+    padding: 15px;
+    background: #eceff1;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    font-size: 30px;
+}
+
+.bxs-user:hover{
+    background-color: #e2f1f8 ;
+    color: #ffbc0e;
+    transform: scale(1.1);
+    /* font-size: 33px; */
+}
+
+.menu-desplegable {
+    position: absolute;
+    top: 29px; /* Ajusta esta altura según la altura de tu barra de navegación */
+    right: 115px;
+    width: 200px;
+    border-radius: 7px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    display: none;
+    z-index: 10; /* Asegúrate de que el menú desplegable esté por encima del resto de los elementos */
+}
+
+.menu-desplegable ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-desplegable ul li {
+    padding: 10px;
+}
+
+.menu-desplegable ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.menu-desplegable ul li a:hover {
+    background-color: #f0f0f0;
+}
