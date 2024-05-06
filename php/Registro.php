@@ -6,19 +6,21 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Obtener los datos del formulario
     $nombre = $_POST['nombre'];
+    $Apaterno = $_POST['Apaterno'];
+    $Amaterno = $_POST['Amaterno'];
     $correo = $_POST['correo'];
     $contrasena = $_POST['contrasena'];
 
     // Insertar los datos en la base de datos
-    $consulta = "INSERT INTO signup(nombre, correo, contrasena) VALUES ('$nombre', '$correo', '$contrasena')";
+    $consulta = "INSERT INTO signup(nombre, correo, contrasena, Apaterno, Amaterno) VALUES ('$nombre', '$correo', '$contrasena','$Apaterno','$Amaterno')";
     $resultado = mysqli_query($conex, $consulta);
 
     if ($resultado) {
         // Si la inserción fue exitosa, mostrar un mensaje
-        echo "<h3>Te has registrado correctamente</h3>";
+        echo "<script>alert('Te has registrado correctamente<')</script>";
     } else {
         // Si hubo un error durante la inserción, mostrar un mensaje de error
-        echo "<h3 class='bad'>Ups, ha ocurrido un error</h3>";
+        echo "<script>alert('class='bad'>Ups, ha ocurrido un error'</script>)";
     }
 }
 ?>
