@@ -11,15 +11,20 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    overflow-y:hidden;
+    overflow-y:cover;
     /*overflow-x: none; */
 }
+
+body::-webkit-scrollbar {
+    display: none;
+} 
 
 main{
     display: flex;
     flex-direction: column;
     /* justify-content: center; */
     align-items: center;
+    padding-bottom: 20px;
 }
 
 .Seccion{
