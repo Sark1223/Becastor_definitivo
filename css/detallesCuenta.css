@@ -11,7 +11,7 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-     overflow-y:hidden;
+    overflow-y:hidden;
     /*overflow-x: none; */
 }
 
@@ -94,11 +94,31 @@ form input{
     color: whitesmoke;
 }
 
-button{
+.btn{
     border-radius: 20px;
     padding: 2px 15px 2px 15px;
-    border: 2px solid rgba(142, 181, 0);
-    background-color: transparent;
-    color: rgba(142, 181,0);
-    /* background-color: rgba(142, 181, 0, 0.566); */
+    background-color: transparent; 
 }
+.btn:hover{
+    color: whitesmoke;
+    transform: scale(1.05);
+}
+.btn:active{
+    transform: scale(0.99);
+}
+.Actualizar{
+    border: 2px solid rgba(142, 181, 0);
+    color: rgba(142, 181,0);
+}
+.Actualizar:hover{
+    background-color: rgba(142, 181, 0);
+}
+.Cancelar{
+    border: 2px solid rgb(147, 15, 0);
+    color: rgb(147, 15, 0);
+}
+.Cancelar:hover{
+    background-color: rgb(147, 15, 0);
+}
+
+

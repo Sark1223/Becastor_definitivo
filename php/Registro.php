@@ -17,10 +17,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if ($resultado) {
         // Si la inserción fue exitosa, mostrar un mensaje
+        header("location: ../html/registro.html");
         echo "<script>alert('Te has registrado correctamente<')</script>";
+        
     } else {
         // Si hubo un error durante la inserción, mostrar un mensaje de error
         echo "<script>alert('class='bad'>Ups, ha ocurrido un error'</script>)";
+        header("location: ../html/registro.html");
     }
 }
 ?>

@@ -37,6 +37,7 @@
                 <li><a href="../html/InformacionPersonal.html">Informacion personal</a></li>
                 <li><a href="../html/becasAplicadas.html">Becas aplicadas</a></li>
                 <li><a href="../html/detallesCuenta.html">Detalle de cuenta</a></li>
+                <li><a href="../html/estudianteInicio.html">Buscar beca</a></li>
                 <li><a href="../index.html">Salir</a></li>
             </ul>
         </div>
@@ -58,19 +59,32 @@
                     <i class='bx bxs-lock-alt' ></i>
                 </div>
                 <div class="input-box">
+                    <p class="Campo">fecha de nacimiento</p>
+                    <input type="text" name="lugarNacimiento" placeholder="23/12/2003" required>
+                    <i class='bx bxs-city' style='color:#ffffff'  ></i>               
+                </div>
+                <div class="input-box">
+                    <p class="Campo">Edad</p>
+                    <input class="numero" type="text" name="edad" placeholder="20" required>
+                    <i class="fi fi-br-hastag" style='color:#ffffff' ></i>               
+                </div>
+                <div class="input-box">
+                    <p class="Campo">Curp</p>
+                    <input class="curp" type="text" name="Curp" placeholder="SARK031223MBCNVRA8" required>
+                    <i class='bx bxs-city' style='color:#ffffff'  ></i>               
+                </div>
+                <div class="input-box">
                     <p class="Campo">Telefono</p>
                     <input type="text" class="telefono" name="telefono" placeholder="6641978723" required>
                     <i class='bx bxs-phone bx-rotate-270' style='color:#ffffff' ></i>               
                 </div>
+            </form>
+                <h2>Dirección Personal</h2>
+            <form>
                 <div class="input-box">
                     <p class="Campo">Calle</p>
                     <input type="text" name="calle" placeholder="Valle encantado" required>
                     <i class='bx bxs-map' style='color:#ffffff' ></i>               
-                </div>
-                <div class="input-box">
-                    <p class="Campo">Colonia</p>
-                    <input type="text" name="colonia" placeholder="Vista del valle" required>
-                    <i class="fi fi-ss-map-marker-home" style='color:#ffffff'></i>            
                 </div>
                 <div class="input-box">
                     <p class="Campo">No. exterior</p>
@@ -81,6 +95,11 @@
                     <p class="Campo">No. interior</p>
                     <input class="numero" type="text" name="interior" placeholder="" required>
                     <i class="fi fi-br-hastag" style='color:#ffffff' ></i>               
+                </div>
+                <div class="input-box">
+                    <p class="Campo">Colonia</p>
+                    <input type="text" name="colonia" placeholder="Vista del valle" required>
+                    <i class="fi fi-ss-map-marker-home" style='color:#ffffff'></i>            
                 </div>
                 <div class="input-box">
                     <p class="Campo">Estado</p>
@@ -97,13 +116,53 @@
                     <input  class="numero" type="text" name="portal" placeholder="22330" required>
                     <i class='bx bxs-city' style='color:#ffffff'  ></i>               
                 </div>
+                <div class="input-box">
+                    <p class="Campo">Pais</p>
+                    <input type="text" name="municipios" placeholder="México" required>
+                    <i class="fi fi-ss-map-marker-home" style='color:#ffffff'></i>            
+                </div>
             </form>
         </div>
     
 
         <div class="Seccion">
+            <h2>Informacion Escolar</h2>
             <form>
-                <h2>Informacion Escolar</h2>
+                <div class="input-box">
+                    <p class="Campo">Nombre de la escuela</p>
+                    <input class="texLargo" type="text" name="nomEscuela" placeholder="Instituto Tecnologico de Tijuana" required>
+                    <i class='bx bxs-city' style='color:#ffffff'  ></i>               
+                </div>
+                <div class="input-box">
+                    <p class="Campo">No. de control</p>
+                    <input class="telefono" type="text" name="noControl" placeholder="21212050" required>
+                    <i class='bx bxs-city' style='color:#ffffff'  ></i>               
+                </div>
+                <div class="input-box">
+                    <p class="Campo">Correo institucional</p>
+                    <input class="correo" type="text" name="correo" placeholder="L21212050@tectijuana.edu.mx" required>
+                    <i class='bx bxs-city' style='color:#ffffff'  ></i>               
+                </div>
+                <div class="input-box">
+                    <p class="Campo">Correo institucional</p>
+                    <input class="correo" type="text" name="correoInsti" placeholder="L21212050@tectijuana.edu.mx" required>
+                    <i class='bx bxs-city' style='color:#ffffff'  ></i>               
+                </div>
+                <div class="input-box">
+                    <p class="Campo">Correo personal</p>
+                    <input class="correo" type="text" name="correoPersonal" placeholder="santoskarla122308@gmail.com" required>
+                    <i class='bx bxs-city' style='color:#ffffff'  ></i>               
+                </div>
+                <div class="input-box">
+                    <p class="Campo">Carrera en curso</p>
+                    <input class="texLargo" type="text" name="carrera" placeholder="Ingenieria en sistemas computacionales" required>
+                    <i class='bx bxs-city' style='color:#ffffff'  ></i>               
+                </div>
+                <div class="input-box">
+                    <p class="Campo">Semestre actual</p>
+                    <input class="numero" type="text" name="semestre" placeholder="6" required>
+                    <i class="fi fi-br-hastag" style='color:#ffffff' ></i>               
+                </div>
             </form>
         </div>
     </main>
