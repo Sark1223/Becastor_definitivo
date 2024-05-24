@@ -68,7 +68,7 @@
                     <h3>BBVA Beca Alimenticia</h3>
                     <p class="descripcion_modal">Esta beca ofrece apoyo económico para cubrir gastos de alimentación durante el periodo escolar.</p>
                     <p class="requisitos_modal">Requisitos: Tener un promedio mínimo de 8.0, demostrar necesidad económica y estar inscrito en una institución educativa reconocida.</p>
-                    <button class="aplicar-modal">Aplicar</button>
+                    <button class="aplicar-modal" onclick="aplicarBeca()">Aplicar</button>
                     <button class="cerrar-modal">Cancelar</button>
                 </div>
             </div>
@@ -88,7 +88,7 @@
                     <h3>Benito Juarez Beca de Excelencia</h3>
                     <p class="descripcion_modal">Esta beca reconoce el rendimiento académico sobresaliente de los estudiantes y proporciona apoyo financiero para continuar sus estudios.</p>
                     <p class="requisitos_modal">Requisitos: Mantener un promedio mínimo de 9.0, ser estudiante regular y participar en actividades extracurriculares.</p>
-                    <button class="aplicar-modal">Aplicar</button>
+                    <button class="aplicar-modal" onclick="aplicarBeca()">Aplicar</button>
                     <button class="cerrar-modal">Cancelar</button>
                 </div>
             </div>
@@ -107,7 +107,7 @@
                     <h3>Santander Beca o Apoyo para titulacion</h3>
                     <p class="descripcion_modal">Esta beca está diseñada para ayudar a los estudiantes a cubrir los gastos relacionados con la titulación universitaria.</p>
                     <p class="requisitos_modal">Requisitos: Estar en proceso de titulación, presentar un plan de estudios aprobado y contar con recomendaciones académicas.</p>
-                    <button class="aplicar-modal">Aplicar</button>
+                    <button class="aplicar-modal" onclick="aplicarBeca()">Aplicar</button>
                     <button class="cerrar-modal">Cancelar</button>
                 </div>
             </div>
@@ -129,7 +129,7 @@
                     <h3>BBVA Beca para la Continuación de Estudios</h3>
                     <p class="descripcion_modal">Esta beca brinda apoyo financiero a estudiantes que deseen continuar con estudios de nivel medio o superior.</p>
                     <p class="requisitos_modal">Requisitos: Ser estudiante activo, presentar un plan de estudios y tener un buen historial académico.</p>
-                    <button class="aplicar-modal">Aplicar</button>
+                    <button class="aplicar-modal" onclick="aplicarBeca()">Aplicar</button>
                     <button class="cerrar-modal">Cancelar</button>
                 </div>
             </div>
@@ -149,7 +149,7 @@
                     <h3>Benito Juarez Beca para Estudios de Especialidad</h3>
                     <p class="descripcion_modal">Esta beca ofrece financiamiento a estudiantes que deseen realizar estudios de especialización en su área de interés.</p>
                     <p class="requisitos_modal">Requisitos: Contar con título universitario, tener experiencia laboral relacionada y presentar un proyecto de estudios.</p>
-                    <button class="aplicar-modal">Aplicar</button>
+                    <button class="aplicar-modal" onclick="aplicarBeca()">Aplicar</button>
                     <button class="cerrar-modal">Cancelar</button>
                 </div>
             </div>
@@ -169,7 +169,7 @@
                     <h3>Santander Beca de Capacitación</h3>
                     <p class="descripcion_modal">Esta beca busca fomentar la capacitación y actualización de conocimientos en diversas áreas de estudio.</p>
                     <p class="requisitos_modal">Requisitos: Ser estudiante activo, demostrar interés en el área de capacitación y tener disponibilidad de tiempo.</p>
-                    <button class="aplicar-modal">Aplicar</button>
+                    <button class="aplicar-modal" onclick="aplicarBeca()">Aplicar</button>
                     <button class="cerrar-modal">Cancelar</button>
                 </div>
             </div>
@@ -179,53 +179,7 @@
     <!-- Scripts -->
     <script src="../scripts/menu_hamburguesa.js"></script>
     <script src="../scripts/modal.js"></script>
-    <script>
-        let searchPhrase = '';
-    
-        function handleSearch(event) {
-            if (event.key === 'Enter') {
-                searchPhrase = event.target.value.toLowerCase();
-                performSearch();
-            }
-        }
-    
-        function performSearch() {
-            var allText = document.body.innerText.toLowerCase();
-            var cards = document.getElementsByClassName('card');
-
-            if (searchPhrase.length === 0) {
-                // Restablecer la búsqueda
-                window.find('', false, true);
-                showAllCards(cards);
-            } else {
-                // Realizar la búsqueda
-                if (allText.includes(searchPhrase)) {
-                    window.find(searchPhrase, false, true);
-                    filterCards(cards);
-                } else {
-                    alert('No se encontraron coincidencias.');
-                }
-            }
-        }
-
-        function filterCards(cards) {
-            Array.from(cards).forEach(card => {
-                const paragraph = card.querySelector('p');
-                if (paragraph && paragraph.innerText.toLowerCase().includes(searchPhrase)) {
-                    card.style.display = 'block'; // Mostrar la carta si contiene el texto buscado
-                } else {
-                    card.style.display = 'none'; // Ocultar la carta si no contiene el texto buscado
-                }
-            });
-        }
-
-        function showAllCards(cards) {
-            Array.from(cards).forEach(card => {
-                card.style.display = 'block'; // Mostrar todas las cartas
-            });
-        }
-
-    </script>
+    <script src="../scripts/busqueda.js"></script>
 </body>
 </html>
 
