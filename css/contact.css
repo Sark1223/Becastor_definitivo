@@ -1,0 +1,107 @@
+body {
+    overflow-y: auto;
+    overflow-x: hidden;
+    min-height: 100%;
+    display: block;
+    background-image: url("../img/fondo4.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    border-radius: 10px;
+    padding: 30px 40px;
+}
+
+form {
+    width: 500px;
+    padding: 20px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(4px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.wrapper h1 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.wrapper .input-box {
+    position: relative;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.input-box input, .input-box textarea {
+    width: calc(100% - 20px);
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 10px;
+    font-size: 16px;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+.input-box input::placeholder, .input-box textarea::placeholder {
+    color: #fff;
+}
+
+.wrapper .btn {
+    width: 100%;
+    height: 45px;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.social-links {
+    text-align: center;
+    color: #fff;
+}
+
+.social-links ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.social-links ul li {
+    display: inline-block;
+    margin: 10px 20px;
+}
+
+.social-links ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.social-links ul li a img {
+    width: 20px;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+.social-links ul li a:hover {
+    text-decoration: underline;
+}
