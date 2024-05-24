@@ -14,3 +14,115 @@ body {
      overflow-y:hidden;
     /*overflow-x: none; */
 }
+.container{
+    width: 100%;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#div_busqueda{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
+    transition: all 0.3s;
+}
+
+#div_busqueda:hover{
+    transform: scale(1.05);
+}
+
+.barra{
+    width: 50%;
+    height: 40px;
+    background-color: rgba(240, 248, 255, 0.459);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    display: flex;
+    justify-content:space-between;
+}
+
+.barra i{
+    /* background-color: transparent;
+    border: none; */
+    font-size: 35px;
+    padding-top: 7px;
+    padding-left: 3px;
+}
+
+.barra i:active{
+    font-size: 32px;
+    
+}
+
+#buscar{
+    width: 90%;
+    background-color: transparent;
+    /* background-color: rgba(95, 158, 160, 0); */
+    margin-left: 15px;
+    border: none;
+    outline: none;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 29%;
+    border-radius: 20px;
+    backdrop-filter: blur(5px);
+    padding: 0px 0px 10px 0px;
+    margin: 2%;
+    color: whitesmoke;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.324);
+    background-color: rgba(255, 255, 255, 0.208);
+    transition: all 0.3s;
+}
+
+.card:hover{
+    transform: scale(1.02);
+}
+
+.card img{
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.card h3{
+    min-height: 50px;
+    font-size:2.3vw;
+    width: 100%;
+    text-align: center;
+}
+
+.descripcion_beca, .descripcion_beca strong{
+    margin-top: 5px;
+    font-size: 1.5vw;
+    font-weight: 400;
+    font-family: "Quicksand", sans-serif;
+}
+
+.etiquetas {
+    padding: 0px 5px; /* Espacio interno en los lados */
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start; /* Alinear las etiquetas al principio */
+}
+
+.etiquetas p {
+    border-radius: 15px;
+    background-color: #ffbb0e6a; /* Amarillo */
+    color: white; /* Letra blanca */
+    font-size: 1.1vw;
+    margin: 3px 3px; /* Eliminar margen entre las etiquetas */
+    padding: 5px 10px; /* Espaciado interno */
+}
+
+.etiquetas p:focus{
+    transform: scale(1.9);
+
+}

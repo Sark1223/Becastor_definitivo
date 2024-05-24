@@ -40,6 +40,27 @@
             </ul>
         </div>
     </header>
+    <div class="container">
+        <div id="div_busqueda">
+            <div class="barra">
+                <input id="buscar" autocomplete="off" type="text" name="buscar" placeholder="Buscar..." onkeydown="handleSearch(event)">
+                <i class='bx bx-search-alt bx-rotate-90'></i>
+            </div>
+        </div>
+        <main id="mainContainer"></main>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Obtener la carta clonada del Local Storage
+            const cartaHTML = localStorage.getItem('cartaClonada');
+
+            // Mostrar la carta clonada en el main
+            const mainContainer = document.getElementById('mainContainer');
+            mainContainer.innerHTML = cartaHTML;
+        });
+
+    </script>
     <script src="../scripts/menu_hamburguesa.js"></script>
+    <script src="../scripts/busqueda.js"></script>
 </body>
 </html>
